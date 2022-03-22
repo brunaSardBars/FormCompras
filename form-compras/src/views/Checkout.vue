@@ -65,6 +65,11 @@ export default {
     if (this.$route.params.order) { 
       this.order = this.$route.params.order
     }
+  },
+  methods: {
+    save() {
+      this.$toasted.success('Pedido realizado com sucesso. Você será encaminhado para a página de pagamento.')      
+    }
   }
 }
 </script>
